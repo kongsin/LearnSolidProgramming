@@ -5,8 +5,6 @@
  */
 package solidlinkovprinciple;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import solidlinkovprinciple.Model.Duck;
 import solidlinkovprinciple.Model.map.Map;
 
