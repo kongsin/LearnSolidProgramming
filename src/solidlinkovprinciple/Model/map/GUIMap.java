@@ -5,11 +5,9 @@
  */
 package solidlinkovprinciple.Model.map;
 
-import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import solidlinkovprinciple.Interface.DisplayPoint;
 import solidlinkovprinciple.Interface.IMAP;
-import solidlinkovprinciple.Interface.IMapPrinter;
 import solidlinkovprinciple.Model.MyObject;
 
 /**

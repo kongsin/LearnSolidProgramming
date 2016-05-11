@@ -15,7 +15,6 @@ public class MapPointEmpty implements DisplayPoint{
 
     @Override
     public String show() {
-        System.out.print("[ ]");
         return "[ ]";
     }
     

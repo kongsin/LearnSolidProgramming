@@ -28,6 +28,7 @@ public class MainForm extends javax.swing.JFrame {
         initComponents();
         map = new GUIMap(40, jTextArea1);
         duck = new Duck("1010", "MyDuck", 20, 20);
+        map.displayMap(duck);
     }
 
     /**

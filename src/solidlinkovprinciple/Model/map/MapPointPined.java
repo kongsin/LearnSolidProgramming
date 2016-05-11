@@ -15,7 +15,6 @@ public class MapPointPined implements DisplayPoint{
 
     @Override
     public String show() {
-        System.out.print("[X]");
         return "[X]";
     }
     

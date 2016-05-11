@@ -5,11 +5,6 @@
  */
 package solidlinkovprinciple;
 
-import action.Down;
-import action.Right;
-import solidlinkovprinciple.Model.Duck;
-import solidlinkovprinciple.Model.map.ConsoldMap;
-
 /**
  *
  * @author kongsin
@@ -21,9 +16,6 @@ public class SolidLinkovPrinciple {
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args) throws InterruptedException {
-        ConsoldMap map = new ConsoldMap(20);
-        Duck duck = new Duck("100", "my duct", 0, 0);
-        
 
     }
 
