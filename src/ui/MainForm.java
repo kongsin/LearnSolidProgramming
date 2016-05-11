@@ -79,7 +79,6 @@ public class MainForm extends javax.swing.JFrame {
     private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
         // TODO add your handling code here:
         int code = evt.getKeyCode();
-        System.out.println(code);
         switch (code) {
             case 37:
                 map.displayMap(new Left(duck).walk());
