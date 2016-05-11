@@ -26,11 +26,7 @@ public class GUIMap extends Map implements IMAP {
     @Override
     public void clearMap() {
         lArea.setText("");
-        for (DisplayPoint[] map1 : map) {
-            for (int j = 0; j < map1.length; j++) {
-                map1[j] = new MapPointEmpty();
-            }
-        }
+        super.clearMap();
     }
 
     @Override

@@ -14,7 +14,7 @@ import solidlinkovprinciple.Interface.IMAP;
  */
 public abstract class Map implements IMAP {
 
-   public final DisplayPoint[][] map;
+    public final DisplayPoint[][] map;
 
     public Map(int mapSize) {
         map = new DisplayPoint[mapSize][mapSize];
@@ -24,4 +24,14 @@ public abstract class Map implements IMAP {
             }
         }
     }
+
+    @Override
+    public void clearMap() {
+        for (DisplayPoint[] map1 : map) {
+            for (int j = 0; j < map.length; j++) {
+                map1[j] = new MapPointEmpty();
+            }
+        }
+    }
+
 }

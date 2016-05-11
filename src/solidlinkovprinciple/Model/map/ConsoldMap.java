@@ -20,11 +20,7 @@ public class ConsoldMap extends Map {
 
     @Override
     public void clearMap() {
-        for (DisplayPoint[] map1 : map) {
-            for (int j = 0; j < map.length; j++) {
-                map1[j] = new MapPointEmpty();
-            }
-        }
+        super.clearMap();
         System.out.println("\n\n\n\n\n\n\n\n");
     }
 
