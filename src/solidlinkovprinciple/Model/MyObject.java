@@ -6,27 +6,23 @@
 package solidlinkovprinciple.Model;
 
 import solidlinkovprinciple.Entities.ObjectPosition;
-import solidlinkovprinciple.Interface.IDuckIO;
-import solidlinkovprinciple.Model.map.Map;
 
 /**
  *
  * @author kongsin
  */
-public class MyObject implements IDuckIO {
+public class MyObject {
 
     private ObjectPosition objectPosition;
     private String objectName;
     private String objectId;
-    private final Map map;
 
-    public MyObject(String ObjectId, String ObjectName, int startX, int startY, Map map) {
+    public MyObject(String ObjectId, String ObjectName, int startX, int startY) {
         this.objectId = ObjectId;
         this.objectName = ObjectName;
         this.objectPosition = new ObjectPosition();
         this.objectPosition.x = startX;
         this.objectPosition.y = startY;
-        this.map = map;
     }
 
     public void setObjectName(String objectName) {
@@ -52,9 +48,5 @@ public class MyObject implements IDuckIO {
     public ObjectPosition getObjectPosition() {
         return objectPosition;
     }
-
-    @Override
-    public void displayObject() {
-        this.map.displayMap(this);
-    }
+    
 }

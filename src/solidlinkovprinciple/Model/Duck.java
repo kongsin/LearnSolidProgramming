@@ -5,16 +5,14 @@
  */
 package solidlinkovprinciple.Model;
 
-import solidlinkovprinciple.Model.map.Map;
-
 /**
  *
  * @author kongsin
  */
 public class Duck extends MyObject {
 
-    public Duck(String ObjectId, String ObjectName, int startX, int startY, Map map) {
-        super(ObjectId, ObjectName, startX, startY, map);
+    public Duck(String ObjectId, String ObjectName, int startX, int startY) {
+        super(ObjectId, ObjectName, startX, startY);
     }
     
 }

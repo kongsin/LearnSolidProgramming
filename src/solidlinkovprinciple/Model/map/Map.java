@@ -7,15 +7,14 @@ package solidlinkovprinciple.Model.map;
 
 import solidlinkovprinciple.Interface.DisplayPoint;
 import solidlinkovprinciple.Interface.IMAP;
-import solidlinkovprinciple.Model.MyObject;
 
 /**
  *
  * @author kongsin
  */
-public class Map implements IMAP {
+public abstract class Map implements IMAP {
 
-    private final DisplayPoint[][] map;
+   public final DisplayPoint[][] map;
 
     public Map(int mapSize) {
         map = new DisplayPoint[mapSize][mapSize];
@@ -25,27 +24,4 @@ public class Map implements IMAP {
             }
         }
     }
-
-    @Override
-    public void clearMap() {
-        for (DisplayPoint[] map1 : map) {
-            for (int j = 0; j < map.length; j++) {
-                map1[j] = new MapPointEmpty();
-            }
-        }
-        System.out.println("\n\n\n\n\n\n\n\n");
-    }
-
-    @Override
-    public void displayMap(MyObject object) {
-        clearMap();
-        map[object.getObjectPosition().x][object.getObjectPosition().y] = new MapPointPined();
-        for (DisplayPoint[] i : map) {
-            for (DisplayPoint j : i) {
-                j.show();
-            }
-            System.out.println("");
-        }
-    }
-
 }
