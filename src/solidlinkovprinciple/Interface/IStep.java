@@ -4,18 +4,10 @@
  * and open the template in the editor.
  */
 package solidlinkovprinciple.Interface;
-
-import solidlinkovprinciple.Controller.DirectionController;
-
 /**
  *
- * @author kongsin
+ * @author kongsin_mac
  */
-public interface IDuck {
-
-    DirectionController walk();
-
-    DirectionController run();
-
-    DirectionController fly();
+public interface IStep {
+    int step(int step, int slow);
 }

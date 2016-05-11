@@ -5,8 +5,6 @@
  */
 package solidlinkovprinciple.Interface;
 
-import solidlinkovprinciple.Model.map.Map;
-
 /**
  *
  * @author kongsin

@@ -5,19 +5,10 @@
  */
 package solidlinkovprinciple.Interface;
 
-import solidlinkovprinciple.Model.MyObject;
-
 /**
  *
- * @author kongsin
+ * @author kongsin_mac
  */
-public interface IDirection {
-
-    MyObject left();
-
-    MyObject right();
-
-    MyObject up();
-
-    MyObject down();
+public interface IDisplay {
+    void diaplay(int delay);
 }

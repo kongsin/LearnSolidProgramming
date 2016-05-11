@@ -7,17 +7,16 @@ package solidlinkovprinciple.Interface;
 
 import solidlinkovprinciple.Model.MyObject;
 
+
 /**
  *
  * @author kongsin
  */
-public interface IDirection {
+public interface IAction {
 
-    MyObject left();
+    MyObject walk();
 
-    MyObject right();
+    MyObject run();
 
-    MyObject up();
-
-    MyObject down();
+    MyObject fly();
 }
